@@ -2,6 +2,7 @@
 // Filtre quais desses números são ímpares
 const array = Array.from(Array(31).keys());
 const filterArr = array.filter((numbers) => numbers % 2 !== 0);
+console.log(filterArr);
 
 
 //Crie um Array contendo a lista de palavras abaixo e filtre apenas quais dessas palávras são palíndromos.
@@ -10,6 +11,7 @@ const list = ['arara', 'amor', 'asa', 'longo', 'ele', 'dinossáuro', 'esse', 'pe
 list.forEach((palindromo) => {
     const reverso = palindromo.split('').reverse().join('');
 if (palindromo === reverso) {
+  console.log(palindromo);
 }
 });
 
@@ -25,6 +27,7 @@ function fibonacciSequence(max) {
   }
   let maxNumber = 100;
   let fibonacci = fibonacciSequence(maxNumber);
+  console.log(fibonacci);
 
   
 //Crie um Array de 1 a 10
@@ -38,6 +41,7 @@ arr.splice(5, 1);
 //remova o número 8 do array e no lugar adicione uma sequencia de números: 20, 21, 22.
 arr.splice(7, 1);
 arr.splice(7, 0, 20, 21, 22)
+console.log(arr);
 
 
 //A partir do Array abaixo crieu um novo array contendo apenas nome e idade:
@@ -49,10 +53,12 @@ const familyList = [
 	{id: 5, nome: 'Fabiano', idade: 45},
 ];
 let newList = familyList.map(itens => 'nome: ' + `${itens.nome},` + ' idade: ' + `${itens.idade}`);
+console.log(newList);
 
 
 //Utilize o mesmo array do desafio anterior para criar um array que contenha os valores abaixo dentro de uma tag h3 como no exemplo abaixo:
 let fullList = familyList.map(obj => `<h3> id: ${obj.id} - nome: ${obj.nome} - idade: ${obj.idade} </h3>`);
+console.log(fullList);
 
 
 // Crie uma automação que remova todas as propriedades do objeto abaixo que não comecem com a letra "j"
